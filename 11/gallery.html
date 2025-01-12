@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeri Foto</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #a9a9f8;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #abc6ff;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+        }
+        .menu {
+            display: flex;
+            justify-content: center;
+            background-color: #9bb3f7;
+            padding: 10px 0;
+        }
+        .menu a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+            display: block;
+        }
+        .menu a:hover {
+            background-color: #9acbf8;
+        }
+        .gallery-container {
+            display: flex;
+            justify-content: space-around;
+            margin: 20px;
+        }
+        .gallery-item {
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .gallery-item img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+        .gallery-item img:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Galeri Foto</h1>
+    </header>
+
+    <!-- Menu -->
+    <div class="menu">
+        <a href="page1.html ">Beranda</a>
+        <a href="foto1.html ">Foto 1</a>
+        <a href="foto2.html ">Foto 2</a>
+        <a href="foto3.html ">Foto 3</a>
+    </div>
+
+    <div class="gallery-container">
+        <div class="gallery-item">
+            <a href="foto1.html">
+                <img src="c:\Users\HP\Pictures\Saved Pictures\harvard.jpg" alt="Foto 1">
+            </a>
+        </div>
+        <div class="gallery-item">
+            <a href="foto2.html">
+                <img src="c:\Users\HP\Pictures\Saved Pictures\oxford.jpg" alt="Foto 2">
+            </a>
+        </div>
+        <div class="gallery-item">
+            <a href="foto3.html">
+                <img src="c:\Users\HP\Pictures\Saved Pictures\cambrige.jpg" alt="Foto 3">
+            </a>
+        </div>
+    </div>
+
+</body>
+</html>
